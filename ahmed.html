@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ahmed .css">
+    <style>*{
+        margin: 0;
+        padding: 0;  
+    }
+    button{
+        width:100%;
+        font-size: 100%;
+        border-radius:6% ;
+        cursor: pointer;
+        height: 100%;
+    }
+    th{
+        font-size: 100%;
+        width: 1000px;
+        background-color: aliceblue  ;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    table{
+        border-radius:2% ;
+        width: 90%;
+        height: 92%;
+        font-size: 120%;
+       background: gold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    button:hover{
+        color: red;
+       
+    }
+    @keyframes rotate {
+       
+        0%{
+            filter: hue-rotate(0deg);
+            }
+            
+            
+            100%{
+            filter: hue-rotate(360deg);
+            }
+    
+        
+    }
+    .all{
+        position: absolute;
+        right: 1%;
+        background: linear-gradient(red,black,blue );
+        width: 75%;
+        height: 75%;
+        top: 2%;
+        animation: rotate 1.9s linear infinite  ;
+        transition: 1.5s;
+        border-radius:3% ;
+        box-shadow: 0px 0px 30px 9px cyan ;
+    border: 1px solid cyan;
+    }
+    .dahmed{
+        width: 100%;
+        position: absolute;
+        top: 90%;
+        right: 0%;
+        color: rgb(0, 51, 255);
+    }
+    </style>
+</head>
+<body>
+    
+   
+  
+    <div class="all">
+    <table style="
+     
+     border: 1px solid black;">
+        <tr><th  style="border: black 1px solid;" id="num1">0</th>
+            <th style="border: black 1px solid;">  <button id="bt1">سبحان الله</button></th>
+        
+        </tr>
+        <tr><th id="num2" style="border: black solid 1px;">0</th>
+            <th style="border: black solid 1px;"><button id="bt2">الحمد لله</button></th>
+        </tr>
+        <tr>
+            <th id="num3" style="border: black solid 1px;">0</th>
+            <th style="border: black solid 1px;"><button id="bt3">لا اله الا الله</button></th>
+        </tr>
+        <tr>
+            <th id="num4" style="border: black solid 1px;">0</th>
+            <th style="border: black solid 1px;"><button id="bt4">الله اكبر</button></th>
+        </tr>
+        <tr>
+            <th id="num5"  style="border: black solid 1px;">0</th>
+            <th style="border: black solid 1px;"><button id="bt5">انتهيت</button></th>
+        </tr>
+        <tr>
+            <th id="num5" ></th>
+            <th style="border: black solid 1px;"><button id="bt6">تصفير</button></th>
+        </tr>
+    </table>
+
+</div>
+<h3 class="dahmed"><i id="num6">By ahmed El Sayed</i></h3>
+
+    <script>let btt1 =document.getElementById("bt1")
+        let btt2 =document.getElementById('bt2')
+        let btt3=document.getElementById('bt3')
+        let btt4=document.getElementById('bt4')
+        let btt5=document.getElementById('bt5')
+        let btt6=document.getElementById('bt6')
+        
+        
+        let num =document.getElementById("num1")
+        let num11 =document.getElementById("num2")
+        let num22 =document.getElementById("num3")
+        let num33 =document.getElementById("num4")
+        
+        let num44 =document.getElementById("num5")
+        let num55 =document.getElementById("num6")
+
+        let a=0;
+        let a1=0
+        let a2=0
+        let a3 =0
+        let a4=0
+        let a5=0
+        let a6=0
+        
+        btt1.addEventListener('click',ahmed1)
+        btt2.addEventListener('click',ahmed2)
+        btt3.addEventListener('click',ahmed3)
+        btt4.addEventListener('click',ahmed4)
+        btt5.addEventListener('click',ahmed5)
+        btt6.addEventListener('click',ahmed6)
+
+        
+        
+        
+        function ahmed1() { 
+            
+                a++
+                num.innerHTML=a
+            
+          
+        
+            
+        }
+        function ahmed2() { 
+            
+            a1++
+            num11.innerHTML=a1
+        
+        
+        
+        
+        }
+        function ahmed3() { 
+            
+            a2++
+            num22.innerHTML=a2
+        
+        
+        
+        
+        }
+        function ahmed4() { 
+            
+            a3++
+            num33.innerHTML=a3
+        
+        
+        
+        
+        }
+        function ahmed5() { 
+            
+            a4=a1+a+a2+a3
+            num44.innerHTML=a4+" :المجموع"
+        
+        
+        
+        
+        }
+        function ahmed6() { 
+            a=a6
+            a1=a6
+            a2=a6
+            a3=a6
+            a4=a6
+            
+           
+        
+            num.innerHTML=0
+            num11.innerHTML=0
+            num22.innerHTML=0
+            num33.innerHTML=0
+            num44.innerHTML=0
+            num55.innerHTML=" شارك البرنامج من فضلك ليكون في ميزان حسناتك وتقبل الله منا ومنكم صالح الاعمال" 
+    
+        
+    }
+        </script>
+    
+</body>
+</html>
